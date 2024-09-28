@@ -1,0 +1,231 @@
+*{
+   margin:0%;
+   padding:0%;
+   box-sizing: border-box;
+}
+
+html,body{
+   height:100%;
+   width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(62, 115, 115);
+  
+}
+
+.displayArea{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+   height: 90%;
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   border-radius: 15px;
+   overflow: hidden;
+   background-color: rgba(21, 21, 205, 0.776);
+   background:-webkit-linear-gradient(bottom left,#43389F 0%,#4696c2 100%);
+
+   background: linear-gradient(to top right, #43389F 0%, #3276aa 100%); 
+}
+
+.displayArea img{  
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+
+.innerDisplay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 48%;
+    left: 23%;
+    top: 25%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0. 0.3);
+    backdrop-filter: blur(5px);
+   
+}
+.logo{
+
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+
+}
+
+
+.logo img{
+
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    width: 50%;
+    height: 35%;
+   z-index: 10;
+    
+}
+.logo p{
+
+    position: absolute;
+    top: 48%;
+    left: 18%; 
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: cursive;
+
+}
+#weatherCondition{
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+
+#temperature{
+    position: absolute;
+     top: 59%;
+     left: 35%;
+     width: 35%;
+     text-align: center;
+    font-size: x-large;
+
+}
+
+.divider{
+
+    position: absolute;
+    left: 30.3%;
+    width: 2px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.data{
+    position: absolute;
+    top: 0%;
+    left: 31%;
+    width:69%;
+    height: 100%;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+}
+.data h3{
+
+    width: 40%;
+    position: absolute;
+    top: 4%;
+    text-align: center;
+    font-family: cursive;
+    color: #ffffff;
+  
+}
+
+.searchBox {
+
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    width: 55%;
+    height:12%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+  
+}
+.searchBox input{
+
+    position: absolute;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+    color: bisque;
+    border-radius: inherit;
+    background:rgba(255, 255, 255, 0.1);
+
+}
+
+.searchBox input[type="search"]::-webkit-search-cancel-button {
+    
+    -webkit-appearance: none;
+    appearance: none;
+   
+}
+.searchBox input:hover{
+    background:rgba(255, 255, 255, 0.4) ; 
+}
+.searchBox button{
+    
+    position: absolute;
+    left: 85%;;
+    width:15%;
+    height:100%;
+    background-color: transparent;
+    border: none;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    cursor: pointer;
+}
+
+.searchBox button img{
+
+    position:absolute;
+    top: 12%;
+    right: 15%;
+  width: 55%;
+  height: 70%;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 25px 45px rgba(0, 0, 0. 0.3); 
+}
+.searchBox button:hover{
+
+    background:rgba(255, 255, 255, 0.4) ;
+   
+
+}
+
+.moreData{
+
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    display:flex;
+    column-gap: 80px;
+    row-gap: 20px;
+     flex-wrap: wrap;
+     color: #ffffff;
+     font-family: cursive;
+     font-size: xx-small;
+     padding:30px;
+     text-align: center;
+     border-bottom-right-radius: inherit;
+   
+
+}
+
+
+
+
+
